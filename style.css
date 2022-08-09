@@ -1,0 +1,306 @@
+:root{
+    --main-radius: 5px;
+    --main-padding: 5px;
+
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: .8fr .2fr 1.2fr 1fr 0.8fr;
+    grid-template-areas:
+     "header header header header"
+     "nav nav nav nav"
+     "main main main sidebar"
+     "content1 content2 content3 sidebar"
+     "footer footer footer footer";
+    grid-gap: .2rem;
+    font-family: 'Raleway', sans-serif;
+    /* 
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px; */
+    color: #000000;
+    text-align:center;
+
+}
+header {
+    background: #87cefa;
+    width: 100%;
+    height: 300px;
+    background-image: url(images/mountainskyline2.png);
+    background-size: 100% 100%;
+    grid-area: header;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+}
+
+h1 {
+    padding-top: 50px;
+}
+nav {
+    background: #f8d8a9;
+    grid-area: nav;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/tanconcrete.webp);
+    text-decoration:none;
+}
+
+
+/*
+a:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}*/
+a {
+    text-decoration: none;
+    color: black; 
+}
+.asia {
+    color: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+}
+
+.latinamerica {
+    color: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+}
+
+.europe {
+    color: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+}
+
+.africa {
+    color: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    
+}
+
+main {
+    background:#87cefa;
+    grid-area: main;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/flowerpattern.webp);
+    
+}
+.shai {
+    width: 300px;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+}
+
+
+.bio {
+    padding: 30px;
+    text-align:left;
+}
+#sidebar {
+    background: #87cefa;
+    grid-area: sidebar;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/flowerpattern.webp);
+}
+
+.connect {
+    display: inline;
+}
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+.polandimage {
+    text-align: center;
+}
+.poland {
+    width: 200px;
+    height: auto;
+
+}
+
+.tweet {
+    display: inline;
+}
+
+.tweet button {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    
+}
+
+.tweet button:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+.globe {
+    width: 200px;
+    height: auto;
+}
+
+.box {
+    text-align: center;
+    display: block;
+}
+.box input {
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align:center;
+    display: block;
+}
+.box button {
+    text-align:center;
+    display: block;    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(0, 106, 255);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+}
+
+.box button:hover {
+    opacity: 0.7;
+    
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+}
+.email {
+    text-align: center;
+    padding-left: 50px;
+    margin: 25px;
+}
+.subscribe {
+    text-align: center;
+    padding-left: 100px;
+    margin: 25px;
+}
+.newsletter {
+}
+
+#content1 {
+    background: #87cefa;
+    grid-area: content1;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/flowerpattern.webp);
+}
+
+.bali {
+    width: 200px;
+    height: auto;
+}
+#content2 {
+    background: #87cefa;
+    grid-area: content2;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/flowerpattern.webp);
+}
+
+.costarica {
+    width: 200px;
+    height: auto; 
+}
+#content3 {
+    background: #87cefa;
+    grid-area: content3;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding);
+    background-image: url(images/flowerpattern.webp);
+}
+
+.thailand {
+    width: 200px;
+    height: auto;
+}
+
+footer{
+    background: #f8d8a9;
+    width: 100%;
+    height: 50px;
+    /* background-image: url(images/sand2.png);*/
+    background-size: 100% 100%;
+    grid-area: footer;
+    border-radius:var(--main-radius);
+    padding-top:150px;
+    background-image: url(images/tanconcrete.webp)
+}
+/* 
+@media only screen and (max width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr 2fr 1.2fr 1.2fr 1.2fr .9fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "sidebar"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+
+    }  */
+

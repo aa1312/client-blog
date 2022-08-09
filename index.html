@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shai Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- style for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <!-- style for share icon in sidebar -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shai's Travel Blog</h1>
+        </header>
+        <nav>
+            <!-- This nav would traditionally link to her posts related to each region she has traveled to.  -->
+            <span class="asia"> 
+                <a href="https://travel.usnews.com/rankings/best-asian-vacations/">Asia</a>
+            </span>
+            <span class="latinamerica"> 
+                <a href="https://travel.usnews.com/rankings/best-central-and-south-american-vacations/">Latin America</a>
+            </span>
+            <span class="europe"> 
+                <a href="https://travel.usnews.com/rankings/best-europe-vacations/">Europe</a>
+            </span>
+            <span class="africa"> 
+                <a href="https://travel.usnews.com/rankings/best-african-and-middle-eastern-vacations/">Africa</a>
+            </span>
+
+        </nav>
+        <main>
+            <h2>Meet Shai</h2>
+            <figure>
+                <img class="hotsprings" src="images/meet.png" alt="Photo of the hot springs in Boulder, Nevada">
+                <figcaption>Shai, traveler extraordinaire</figcaption>
+            </figure>
+            <p class="bio">I'm Shai and I love... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </main>
+        <div id="sidebar">
+            <h3 class="connect">Connect</h3>
+            <span class="material-symbols-outlined">
+                share
+                </span>
+            <figure class="polandimage"> 
+                <img class="poland" src="images/polandzapokane.jpg" alt="Hand taking photo of waterfall in Poland">
+            </figure>
+             <!-- alternate form of social media button with text, not icon
+                <form class="tweet">
+                    <button type="submit" formaction="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </button>
+                </form> -->
+
+                <a href="https://twitter.com/intent/tweet?url=" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                
+                
+            <figure>
+                <img class="globe" src="images/globefinger.jpg" alt="A human finger pointing at France on a globe">
+            </figure>
+            <div class="box">
+                <p class="newsletter">Keep up with Shai's travels! <br> Sign up for her newsletter! </p>
+               <form class="email">
+                    <input type="text" placeholder = "Email Address...">
+                </form>
+                <form class="subscribe">
+                        <button type="submit" formaction="https://www.google.com">Subscribe</button>
+                        
+                        <!-- This subscribe button links to google just to show you that I have made it functional and not merely decorative.  -->
+                </form>
+
+                
+            </div>
+
+        </div>
+
+        <!-- Although these three content links to these locations lead to wikipedia sites on this version, they would traditionally link to Shai's blog posts on those locations. Thus, rather than linking externally they would link internally to another page of her blog.  -->
+        <div id="content1">
+            <h3>Bali</h3>
+            <figure>
+                <a href="https://en.wikipedia.org/wiki/Bali"> <img class="bali" src="images/balismall1.jpg" alt="Bali temple"></a>
+            </figure>
+
+        </div>
+        <div id="content2">
+            <h3>Costa Rica</h3>
+            <figure>
+                    <a href="https://en.wikipedia.org/wiki/Costa_Rica"> <img class="costarica" src="images/costaricatoucan.jpg" alt="A waterfall in Aguatuso, Costa Rica"></a>
+            </figure>
+        </div>
+        <div id="content3">
+            <h3>Thailand</h3> 
+                <a href="https://en.wikipedia.org/wiki/Thailand"> <img class="thailand" src="images/thailandislands.jpg" alt="Phi Phi islands and coastal towns in Thailand"></a>
+        </div>
+        <footer>
+            ©Shai's Travel Blog 2022
+        </footer>
+    </div>
+</body>
+</html>
